@@ -1,0 +1,20 @@
+
+//
+//  Instructions.h
+//  CardStore
+//
+//  Created by Sravya Chandrapati on 16/08/24.
+//
+
+1. Display the fetched cards-
+    1. Create reusable views - listview and cardView
+    2. Handle Navigation
+    3. Create tab bar
+2. Sort/Group cards by type -
+3. Option to bookmark or save cards
+    1. Create a dictionary based on bookmark cards
+4. Proper error handling and display appropriate error messages if the API’s fail.
+    1. API call to get credit card data. - Create Network Layer
+    2. Parsing
+    3. create cardModel
+    4. Exception handling for api calls gracefully

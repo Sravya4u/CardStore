@@ -32,6 +32,7 @@
 		FACFE73D2C6F3F1900D1857F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FACFE7432C6F3F1A00D1857F /* CardStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStoreTests.swift; sourceTree = "<group>"; };
+		FACFE7602C6F41A700D1857F /* Instructions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instructions.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		FACFE72A2C6F3F1400D1857F = {
 			isa = PBXGroup;
 			children = (
+				FACFE7602C6F41A700D1857F /* Instructions.txt */,
 				FACFE7352C6F3F1400D1857F /* CardStore */,
 				FACFE7462C6F3F1A00D1857F /* CardStoreTests */,
 				FACFE7342C6F3F1400D1857F /* Products */,
