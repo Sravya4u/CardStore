@@ -12,6 +12,13 @@
 		FACFE73B2C6F3F1900D1857F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACFE73A2C6F3F1900D1857F /* Assets.xcassets */; };
 		FACFE73E2C6F3F1900D1857F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACFE73D2C6F3F1900D1857F /* Preview Assets.xcassets */; };
 		FACFE7482C6F3F1A00D1857F /* CardStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */; };
+		FACFE7642C6F457F00D1857F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7632C6F457F00D1857F /* CardModel.swift */; };
+		FACFE7672C6F461600D1857F /* CardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7662C6F461600D1857F /* CardGroupView.swift */; };
+		FACFE7682C6F461600D1857F /* CardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7662C6F461600D1857F /* CardGroupView.swift */; };
+		FACFE76B2C6F467300D1857F /* CardResponseMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */; };
+		FACFE76C2C6F467300D1857F /* CardResponseMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */; };
+		FACFE76F2C6F471500D1857F /* CardGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76E2C6F471500D1857F /* CardGroupViewModel.swift */; };
+		FACFE7722C6F475600D1857F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7712C6F475600D1857F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,12 @@
 		FACFE7432C6F3F1A00D1857F /* CardStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStoreTests.swift; sourceTree = "<group>"; };
 		FACFE7602C6F41A700D1857F /* Instructions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instructions.txt; sourceTree = "<group>"; };
+		FACFE7612C6F44AA00D1857F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FACFE7632C6F457F00D1857F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		FACFE7662C6F461600D1857F /* CardGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupView.swift; sourceTree = "<group>"; };
+		FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardResponseMockup.swift; sourceTree = "<group>"; };
+		FACFE76E2C6F471500D1857F /* CardGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupViewModel.swift; sourceTree = "<group>"; };
+		FACFE7712C6F475600D1857F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				FACFE7602C6F41A700D1857F /* Instructions.txt */,
+				FACFE7612C6F44AA00D1857F /* README.md */,
 				FACFE7352C6F3F1400D1857F /* CardStore */,
 				FACFE7462C6F3F1A00D1857F /* CardStoreTests */,
 				FACFE7342C6F3F1400D1857F /* Products */,
@@ -75,6 +89,11 @@
 		FACFE7352C6F3F1400D1857F /* CardStore */ = {
 			isa = PBXGroup;
 			children = (
+				FACFE7702C6F473A00D1857F /* NetworkService */,
+				FACFE76D2C6F470200D1857F /* ViewModels */,
+				FACFE7692C6F463B00D1857F /* MockUp */,
+				FACFE7652C6F45A500D1857F /* Views */,
+				FACFE7622C6F454F00D1857F /* Model */,
 				FACFE7362C6F3F1400D1857F /* CardStoreApp.swift */,
 				FACFE7382C6F3F1400D1857F /* ContentView.swift */,
 				FACFE73A2C6F3F1900D1857F /* Assets.xcassets */,
@@ -97,6 +116,46 @@
 				FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */,
 			);
 			path = CardStoreTests;
+			sourceTree = "<group>";
+		};
+		FACFE7622C6F454F00D1857F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FACFE7632C6F457F00D1857F /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FACFE7652C6F45A500D1857F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FACFE7662C6F461600D1857F /* CardGroupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FACFE7692C6F463B00D1857F /* MockUp */ = {
+			isa = PBXGroup;
+			children = (
+				FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */,
+			);
+			path = MockUp;
+			sourceTree = "<group>";
+		};
+		FACFE76D2C6F470200D1857F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FACFE76E2C6F471500D1857F /* CardGroupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FACFE7702C6F473A00D1857F /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				FACFE7712C6F475600D1857F /* NetworkManager.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +258,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACFE76F2C6F471500D1857F /* CardGroupViewModel.swift in Sources */,
+				FACFE7672C6F461600D1857F /* CardGroupView.swift in Sources */,
 				FACFE7392C6F3F1400D1857F /* ContentView.swift in Sources */,
+				FACFE7722C6F475600D1857F /* NetworkManager.swift in Sources */,
+				FACFE76B2C6F467300D1857F /* CardResponseMockup.swift in Sources */,
 				FACFE7372C6F3F1400D1857F /* CardStoreApp.swift in Sources */,
+				FACFE7642C6F457F00D1857F /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACFE76C2C6F467300D1857F /* CardResponseMockup.swift in Sources */,
+				FACFE7682C6F461600D1857F /* CardGroupView.swift in Sources */,
 				FACFE7482C6F3F1A00D1857F /* CardStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

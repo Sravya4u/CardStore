@@ -18,3 +18,9 @@
     2. Parsing
     3. create cardModel
     4. Exception handling for api calls gracefully
+5. Folder Structure
+    1. Model
+    2. Views
+        ReusableComponents
+    3. ViewModels
+    4. NetworkServices
