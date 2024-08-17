@@ -6,9 +6,14 @@
 // 
 
 import Foundation
+import Combine
 
 protocol NetworkService {
-    func fetchCards(from: URL, completion: @escaping (Result<Data, Error>) -> Void);
+    // Method to fetch cards from a remote URL
+      func fetchCards() -> AnyPublisher<[Card], Error>
+      
+      // Method to load mock cards from a local JSON file
+      func loadMockCards() -> AnyPublisher<[Card], Error>
 }
 
 class NetworkManager : NetworkService{
@@ -18,15 +23,22 @@ class NetworkManager : NetworkService{
     private init() {}
     
     /// Fetches data from the specified URL using a URLSession data task.
-    ///
-    /// - Parameters:
-    ///   - url: The URL from which to fetch the data.
-    ///   - completion: A closure to be executed upon completion of the data fetch operation, containing a result with either the fetched data or an error.
-    func fetchCards(from: URL, completion: @escaping (Result<Data, Error>) -> Void) {
-        <#code#>
+
+    func fetchCards() -> AnyPublisher<[Card], Error> {
+        let url = URL(string: "https://random-data-api.com/api/v2/credit_cards?size=100")! // Replace with your API URL
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: [Card].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
     }
     
-    func loadMockCards(){}
+    func loadMockCards() -> AnyPublisher<[Card], Error> {
+        let url = Bundle.main.url(forResource: "CardResponseMockUp", withExtension: "json")!
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .map(\.data)
+            .decode(type: [Card].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
     
 
 }

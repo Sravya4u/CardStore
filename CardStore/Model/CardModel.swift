@@ -7,15 +7,15 @@
 
 import Foundation
 
-import Foundation
-
 struct Card: Identifiable, Codable {
     let id: Int
     let uid: String
     let creditCardNumber: String
     let creditCardExpiryDate: String
     let creditCardType: String
+    var isBookmarked: Bool = false // New property to track bookmark state
 
+    
     enum CodingKeys: String, CodingKey {
         case id
         case uid

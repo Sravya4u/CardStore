@@ -7,15 +7,28 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @StateObject private var viewModel = CardViewModel(useMockData:true) // Switch to false for real API
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            NavigationView {
+                CardGroupsView(viewModel: viewModel)
+            }
+            .tabItem {
+                Image(systemName: "list.bullet")
+                Text("Card Groups")
+            }
+            
+            NavigationView {
+                BookmarksView(viewModel: viewModel)
+            }
+            .tabItem {
+                Image(systemName: "bookmark.fill")
+                Text("Bookmarks")
+            }
         }
-        .padding()
     }
 }
 
