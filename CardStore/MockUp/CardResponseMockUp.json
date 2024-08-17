@@ -1,0 +1,72 @@
+[
+    {
+        "id": 6381,
+        "uid": "da5e2467-1557-49ad-bfee-89d2c7daaa16",
+        "credit_card_number": "1228-1221-1221-1431",
+        "credit_card_expiry_date": "2026-08-15",
+        "credit_card_type": "jcb"
+    },
+    {
+        "id": 6918,
+        "uid": "35ff5688-c453-4cdf-b774-e5d8d7a3dab5",
+        "credit_card_number": "1211-1221-1234-2201",
+        "credit_card_expiry_date": "2028-08-14",
+        "credit_card_type": "maestro"
+    },
+    {
+        "id": 1546,
+        "uid": "13362af4-2960-4a08-a6e1-85250adc8a15",
+        "credit_card_number": "1234-2121-1221-1211",
+        "credit_card_expiry_date": "2027-08-15",
+        "credit_card_type": "visa"
+    },
+    {
+        "id": 9473,
+        "uid": "06f70bb7-fc16-4c3e-a189-19bf8c70c97f",
+        "credit_card_number": "1228-1221-1221-1431",
+        "credit_card_expiry_date": "2026-08-15",
+        "credit_card_type": "diners_club"
+    },
+    {
+        "id": 4870,
+        "uid": "20675f4d-1ae2-472e-8b30-d2a3a7ac40c9",
+        "credit_card_number": "1212-1221-1121-1234",
+        "credit_card_expiry_date": "2026-08-15",
+        "credit_card_type": "mastercard"
+    },
+    {
+        "id": 617,
+        "uid": "16da7895-6443-49ae-90dc-aa7b36377841",
+        "credit_card_number": "1228-1221-1221-1431",
+        "credit_card_expiry_date": "2025-08-15",
+        "credit_card_type": "laser"
+    },
+    {
+        "id": 1994,
+        "uid": "234a530c-acd3-469e-ba2f-6a571f58de35",
+        "credit_card_number": "1211-1221-1234-2201",
+        "credit_card_expiry_date": "2028-08-14",
+        "credit_card_type": "mastercard"
+    },
+    {
+        "id": 5358,
+        "uid": "205b38e7-879a-4a34-9bcd-ec94b918c816",
+        "credit_card_number": "1234-2121-1221-1211",
+        "credit_card_expiry_date": "2027-08-15",
+        "credit_card_type": "dankort"
+    },
+    {
+        "id": 7639,
+        "uid": "bd74dccb-08da-4b47-942f-dcb0dd651cb5",
+        "credit_card_number": "1212-1221-1121-1234",
+        "credit_card_expiry_date": "2025-08-15",
+        "credit_card_type": "solo"
+    },
+    {
+        "id": 2529,
+        "uid": "c919ebbe-b3c4-4f7b-823a-92c8878fa213",
+        "credit_card_number": "1234-2121-1221-1211",
+        "credit_card_expiry_date": "2026-08-15",
+        "credit_card_type": "maestro"
+    }
+]
