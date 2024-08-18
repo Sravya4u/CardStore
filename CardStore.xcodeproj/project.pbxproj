@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAC700562C717C5D00CAD7D8 /* CardGroupsSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7862C712E4A00D1857F /* CardGroupsSkeletonView.swift */; };
+		FAC700572C717C6200CAD7D8 /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76E2C6F471500D1857F /* CardViewModel.swift */; };
+		FAC700582C717C6500CAD7D8 /* CreditCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE77F2C705C0A00D1857F /* CreditCardListView.swift */; };
+		FAC700592C717C6F00CAD7D8 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7782C6FCBF800D1857F /* CreditCardView.swift */; };
+		FAC7005A2C717CC500CAD7D8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7632C6F457F00D1857F /* Card.swift */; };
+		FAC7005B2C717CC800CAD7D8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7712C6F475600D1857F /* NetworkManager.swift */; };
+		FAC7005C2C717CCD00CAD7D8 /* CardResponseMockUp.json in Resources */ = {isa = PBXBuildFile; fileRef = FACFE7732C6F4A9A00D1857F /* CardResponseMockUp.json */; };
+		FAC7005D2C717D3400CAD7D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7382C6F3F1400D1857F /* ContentView.swift */; };
+		FAC7005E2C717D3C00CAD7D8 /* CardStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7362C6F3F1400D1857F /* CardStoreApp.swift */; };
+		FAC700632C71A1EE00CAD7D8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC700622C71A1EE00CAD7D8 /* NetworkError.swift */; };
+		FAC700642C71A1EE00CAD7D8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC700622C71A1EE00CAD7D8 /* NetworkError.swift */; };
+		FAC700692C71AAE100CAD7D8 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC700682C71AAE100CAD7D8 /* DecodingError.swift */; };
+		FAC7006A2C71AAE100CAD7D8 /* DecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC700682C71AAE100CAD7D8 /* DecodingError.swift */; };
 		FACFE7372C6F3F1400D1857F /* CardStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7362C6F3F1400D1857F /* CardStoreApp.swift */; };
 		FACFE7392C6F3F1400D1857F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7382C6F3F1400D1857F /* ContentView.swift */; };
 		FACFE73B2C6F3F1900D1857F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACFE73A2C6F3F1900D1857F /* Assets.xcassets */; };
 		FACFE73E2C6F3F1900D1857F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACFE73D2C6F3F1900D1857F /* Preview Assets.xcassets */; };
-		FACFE7482C6F3F1A00D1857F /* CardStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */; };
-		FACFE7642C6F457F00D1857F /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7632C6F457F00D1857F /* CardModel.swift */; };
-		FACFE7672C6F461600D1857F /* CardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7662C6F461600D1857F /* CardGroupView.swift */; };
-		FACFE7682C6F461600D1857F /* CardGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7662C6F461600D1857F /* CardGroupView.swift */; };
-		FACFE76B2C6F467300D1857F /* CardResponseMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */; };
-		FACFE76C2C6F467300D1857F /* CardResponseMockup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */; };
-		FACFE76F2C6F471500D1857F /* CardGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76E2C6F471500D1857F /* CardGroupViewModel.swift */; };
+		FACFE7642C6F457F00D1857F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7632C6F457F00D1857F /* Card.swift */; };
+		FACFE7672C6F461600D1857F /* CardGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7662C6F461600D1857F /* CardGroupsView.swift */; };
+		FACFE7682C6F461600D1857F /* CardGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7662C6F461600D1857F /* CardGroupsView.swift */; };
+		FACFE76F2C6F471500D1857F /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE76E2C6F471500D1857F /* CardViewModel.swift */; };
 		FACFE7722C6F475600D1857F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7712C6F475600D1857F /* NetworkManager.swift */; };
+		FACFE7742C6F4A9A00D1857F /* CardResponseMockUp.json in Resources */ = {isa = PBXBuildFile; fileRef = FACFE7732C6F4A9A00D1857F /* CardResponseMockUp.json */; };
+		FACFE7792C6FCBF800D1857F /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7782C6FCBF800D1857F /* CreditCardView.swift */; };
+		FACFE7812C705C0A00D1857F /* CreditCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE77F2C705C0A00D1857F /* CreditCardListView.swift */; };
+		FACFE7822C705C0A00D1857F /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7802C705C0A00D1857F /* BookmarksView.swift */; };
+		FACFE7832C706B7D00D1857F /* BookmarksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7802C705C0A00D1857F /* BookmarksView.swift */; };
+		FACFE7852C7094BB00D1857F /* CardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7842C7094BB00D1857F /* CardViewModelTests.swift */; };
+		FACFE7872C712E4A00D1857F /* CardGroupsSkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACFE7862C712E4A00D1857F /* CardGroupsSkeletonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,20 +49,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAC700622C71A1EE00CAD7D8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FAC700682C71AAE100CAD7D8 /* DecodingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingError.swift; sourceTree = "<group>"; };
 		FACFE7332C6F3F1400D1857F /* CardStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACFE7362C6F3F1400D1857F /* CardStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStoreApp.swift; sourceTree = "<group>"; };
 		FACFE7382C6F3F1400D1857F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FACFE73A2C6F3F1900D1857F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FACFE73D2C6F3F1900D1857F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FACFE7432C6F3F1A00D1857F /* CardStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStoreTests.swift; sourceTree = "<group>"; };
 		FACFE7602C6F41A700D1857F /* Instructions.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Instructions.txt; sourceTree = "<group>"; };
 		FACFE7612C6F44AA00D1857F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FACFE7632C6F457F00D1857F /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
-		FACFE7662C6F461600D1857F /* CardGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupView.swift; sourceTree = "<group>"; };
-		FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardResponseMockup.swift; sourceTree = "<group>"; };
-		FACFE76E2C6F471500D1857F /* CardGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupViewModel.swift; sourceTree = "<group>"; };
+		FACFE7632C6F457F00D1857F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FACFE7662C6F461600D1857F /* CardGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupsView.swift; sourceTree = "<group>"; };
+		FACFE76E2C6F471500D1857F /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		FACFE7712C6F475600D1857F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FACFE7732C6F4A9A00D1857F /* CardResponseMockUp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CardResponseMockUp.json; sourceTree = "<group>"; };
+		FACFE7782C6FCBF800D1857F /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		FACFE77F2C705C0A00D1857F /* CreditCardListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditCardListView.swift; sourceTree = "<group>"; };
+		FACFE7802C705C0A00D1857F /* BookmarksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksView.swift; sourceTree = "<group>"; };
+		FACFE7842C7094BB00D1857F /* CardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModelTests.swift; sourceTree = "<group>"; };
+		FACFE7862C712E4A00D1857F /* CardGroupsSkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGroupsSkeletonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +136,7 @@
 		FACFE7462C6F3F1A00D1857F /* CardStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				FACFE7472C6F3F1A00D1857F /* CardStoreTests.swift */,
+				FACFE7842C7094BB00D1857F /* CardViewModelTests.swift */,
 			);
 			path = CardStoreTests;
 			sourceTree = "<group>";
@@ -121,7 +144,7 @@
 		FACFE7622C6F454F00D1857F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FACFE7632C6F457F00D1857F /* CardModel.swift */,
+				FACFE7632C6F457F00D1857F /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,7 +152,10 @@
 		FACFE7652C6F45A500D1857F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FACFE7662C6F461600D1857F /* CardGroupView.swift */,
+				FACFE7802C705C0A00D1857F /* BookmarksView.swift */,
+				FACFE7752C6F6C2B00D1857F /* Reusable */,
+				FACFE7662C6F461600D1857F /* CardGroupsView.swift */,
+				FACFE7862C712E4A00D1857F /* CardGroupsSkeletonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,7 +163,7 @@
 		FACFE7692C6F463B00D1857F /* MockUp */ = {
 			isa = PBXGroup;
 			children = (
-				FACFE76A2C6F467300D1857F /* CardResponseMockup.swift */,
+				FACFE7732C6F4A9A00D1857F /* CardResponseMockUp.json */,
 			);
 			path = MockUp;
 			sourceTree = "<group>";
@@ -145,7 +171,7 @@
 		FACFE76D2C6F470200D1857F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				FACFE76E2C6F471500D1857F /* CardGroupViewModel.swift */,
+				FACFE76E2C6F471500D1857F /* CardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -154,8 +180,19 @@
 			isa = PBXGroup;
 			children = (
 				FACFE7712C6F475600D1857F /* NetworkManager.swift */,
+				FAC700622C71A1EE00CAD7D8 /* NetworkError.swift */,
+				FAC700682C71AAE100CAD7D8 /* DecodingError.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		FACFE7752C6F6C2B00D1857F /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				FACFE77F2C705C0A00D1857F /* CreditCardListView.swift */,
+				FACFE7782C6FCBF800D1857F /* CreditCardView.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACFE7742C6F4A9A00D1857F /* CardResponseMockUp.json in Resources */,
 				FACFE73E2C6F3F1900D1857F /* Preview Assets.xcassets in Resources */,
 				FACFE73B2C6F3F1900D1857F /* Assets.xcassets in Resources */,
 			);
@@ -248,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC7005C2C717CCD00CAD7D8 /* CardResponseMockUp.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,13 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACFE76F2C6F471500D1857F /* CardGroupViewModel.swift in Sources */,
-				FACFE7672C6F461600D1857F /* CardGroupView.swift in Sources */,
+				FACFE76F2C6F471500D1857F /* CardViewModel.swift in Sources */,
+				FACFE7822C705C0A00D1857F /* BookmarksView.swift in Sources */,
+				FACFE7672C6F461600D1857F /* CardGroupsView.swift in Sources */,
 				FACFE7392C6F3F1400D1857F /* ContentView.swift in Sources */,
 				FACFE7722C6F475600D1857F /* NetworkManager.swift in Sources */,
-				FACFE76B2C6F467300D1857F /* CardResponseMockup.swift in Sources */,
+				FACFE7792C6FCBF800D1857F /* CreditCardView.swift in Sources */,
+				FACFE7812C705C0A00D1857F /* CreditCardListView.swift in Sources */,
 				FACFE7372C6F3F1400D1857F /* CardStoreApp.swift in Sources */,
-				FACFE7642C6F457F00D1857F /* CardModel.swift in Sources */,
+				FACFE7872C712E4A00D1857F /* CardGroupsSkeletonView.swift in Sources */,
+				FAC700692C71AAE100CAD7D8 /* DecodingError.swift in Sources */,
+				FAC700632C71A1EE00CAD7D8 /* NetworkError.swift in Sources */,
+				FACFE7642C6F457F00D1857F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +316,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FACFE76C2C6F467300D1857F /* CardResponseMockup.swift in Sources */,
-				FACFE7682C6F461600D1857F /* CardGroupView.swift in Sources */,
-				FACFE7482C6F3F1A00D1857F /* CardStoreTests.swift in Sources */,
+				FAC7005D2C717D3400CAD7D8 /* ContentView.swift in Sources */,
+				FAC700562C717C5D00CAD7D8 /* CardGroupsSkeletonView.swift in Sources */,
+				FAC7005B2C717CC800CAD7D8 /* NetworkManager.swift in Sources */,
+				FAC700572C717C6200CAD7D8 /* CardViewModel.swift in Sources */,
+				FACFE7682C6F461600D1857F /* CardGroupsView.swift in Sources */,
+				FACFE7832C706B7D00D1857F /* BookmarksView.swift in Sources */,
+				FAC7005A2C717CC500CAD7D8 /* Card.swift in Sources */,
+				FACFE7852C7094BB00D1857F /* CardViewModelTests.swift in Sources */,
+				FAC7005E2C717D3C00CAD7D8 /* CardStoreApp.swift in Sources */,
+				FAC700642C71A1EE00CAD7D8 /* NetworkError.swift in Sources */,
+				FAC700582C717C6500CAD7D8 /* CreditCardListView.swift in Sources */,
+				FAC7006A2C71AAE100CAD7D8 /* DecodingError.swift in Sources */,
+				FAC700592C717C6F00CAD7D8 /* CreditCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
