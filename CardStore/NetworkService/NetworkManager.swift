@@ -22,8 +22,8 @@ class NetworkManager : NetworkService{
     
     private init() {}
     
-    /// Fetches data from the specified URL using a URLSession data task.
-
+    
+    /// Fetches cards  from the specified remote URL
     func fetchCards() -> AnyPublisher<[Card], Error> {
         let url = URL(string: "https://random-data-api.com/api/v2/credit_cards?size=100")! // Replace with your API URL
         return URLSession.shared.dataTaskPublisher(for: url)

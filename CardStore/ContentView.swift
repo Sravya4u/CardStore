@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject private var viewModel = CardViewModel(useMockData:true) // Switch to false for real API
+    @StateObject private var viewModel = CardViewModel(useMockData:false) // Switch to false for real API
 
     var body: some View {
         TabView {
