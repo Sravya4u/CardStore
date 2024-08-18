@@ -38,7 +38,7 @@ class CardViewModel: ObservableObject {
                     switch completion {
                     case .failure(let error):
                         self?.isLoading = false
-                        self?.errorMessage = ErrorMessage(message: "Failed to load cards: \(error.localizedDescription)")
+                        self?.handleError(error)
                     case .finished:
                         self?.isLoading = false
                         break
@@ -57,7 +57,7 @@ class CardViewModel: ObservableObject {
             .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    self?.errorMessage = ErrorMessage(message: "Failed to load cards: \(error.localizedDescription)")
+                    self?.handleError(error)
                 case .finished:
                     break
                 }
@@ -66,6 +66,21 @@ class CardViewModel: ObservableObject {
             })
             .store(in: &cancellables)
     }
+    
+    private func handleError(_ error: Error) {
+           let errorMessage: String
+           switch error {
+           case NetworkError.invalidURL:
+               errorMessage = "The URL is invalid. Please try again."
+           case NetworkError.fileNotFound:
+               errorMessage = "The requested file could not be found."
+           case DecodingError.decodingFailed:
+               errorMessage = "Failed to decode the data. Please try again."
+           default:
+               errorMessage = "Failed to load cards: \(error.localizedDescription)"
+           }
+           self.errorMessage = ErrorMessage(message: errorMessage)
+       }
 
     
     func toggleBookmark(card: Card) {
