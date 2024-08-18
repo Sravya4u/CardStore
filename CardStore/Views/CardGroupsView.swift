@@ -11,7 +11,32 @@ struct CardGroupsView: View {
     @ObservedObject var viewModel: CardViewModel
 
     var body: some View {
-       EmptyView()
+        Group {
+            if viewModel.isLoading {
+                CardGroupsSkeletonView()
+            } else {
+                List {
+                    ForEach(viewModel.groupedCards().keys.sorted(), id: \.self) { cardType in
+                        NavigationLink(destination: CreditCardListView(viewModel: viewModel, cardType: cardType)) {
+                            HStack {
+                                Image(uiImage: UIImage(named: cardType.lowercased()) ?? UIImage(named: cardType.lowercased()+"_fallback") ??
+                                    UIImage ())
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 50, height: 30)
+                                Text(cardType.capitalized)
+                                Spacer()
+                                Text("\(viewModel.groupedCards()[cardType]?.count ?? 0)")
+                            }
+                            .padding(.vertical, 6)
+                        }
+                    }
+                }
+                .navigationTitle("Card Groups")
+                .alert(item: $viewModel.errorMessage) { errorMessage in
+                    Alert(title: Text("Error"), message: Text(errorMessage.message), dismissButton: .default(Text("OK")))
+                }
+            }
+        }
     }
 }
-
