@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Enum representing various JSON decoding errors on API calls
 enum DecodingError: Error, LocalizedError {
     case decodingFailed
     

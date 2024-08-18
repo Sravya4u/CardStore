@@ -6,7 +6,14 @@
 //
 
 import Foundation
-
+/**
+*  Card.swift
+*
+*  Represents a card entity, adhering to the SOLID principles by following clear separation of concerns and single responsibility.
+*  It conforms to the Codable protocol for encoding and decoding, ensuring data interchangeability.
+*
+*  - Author: Sravya Chandrapati
+*/
 struct Card: Identifiable, Codable {
     let id: Int
     let uid: String
@@ -14,7 +21,7 @@ struct Card: Identifiable, Codable {
     let creditCardExpiryDate: String
     let creditCardType: String
     var isBookmarked: Bool = false // New property to track bookmark state
-
+    
     
     enum CodingKeys: String, CodingKey {
         case id

@@ -6,7 +6,13 @@
 //
 
 import SwiftUI
-
+/**
+ *  CardGroupsSkeletonView.swift
+ *
+ *  The CardGroupsSkeletonView struct is a skeleton assisting cardGroupView to load gracefully which API fetch is in progress
+ *
+ *  - Author: Sravya Chandrapati
+ */
 struct CardGroupsSkeletonView: View {
     var body: some View {
         List {
