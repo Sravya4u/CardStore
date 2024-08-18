@@ -86,13 +86,6 @@ ViewModel: Acts as an intermediary between the view and model layers. Includes t
   - Uses the `groupedCards` function from the `CardViewModel` to categorize cards.
   - Displays each group with a header representing the card type.
 
-## Error Handling
-The project includes comprehensive error handling for network, URL, and decoding errors. These errors are propagated to the `CardViewModel`, which updates the UI with appropriate error messages.
-
-## Testing
-The project includes unit tests for:
-- Validating the success and failure scenarios of the `fetchCards` function.
-- Handling of various error conditions in both the `CardViewModel` and `NetworkManager`.
 
 ## Getting Started
 
